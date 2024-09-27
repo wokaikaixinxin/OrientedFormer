@@ -8,3 +8,12 @@
 
 [2024/9/4] Codes will be released when the paper is officially accepted.
 
+***
+
+Chinese Version
+
+[2024/9/23] 校稿。代码将在论文正式刊登后开源。
+
+[2024/9/11] OrientedFormer被IEEE Transactions on Geoscience and Remote Sensing (TGRS) 早期接受。代码将在论文正式刊登后开源。
+
+[2024/9/4] 代码将在论文正式刊登后开源。
