@@ -20,7 +20,7 @@ Please refer to [Installation](https://mmrotate.readthedocs.io/en/1.x/get_starte
 
 **Note**: Our codes base on the newest version mmrotate-1.x, not mmrotate-0.x.
 
-**Note**: All of our codes can be found in path './projects/OrientedFormer/'.
+**Note**: All of our codes can be found in [path](https://github.com/wokaikaixinxin/OrientedFormer/tree/main/projects/OrientedFormer) './projects/OrientedFormer/'.
 
 
 
@@ -254,7 +254,7 @@ TGRS官方论文链接 https://ieeexplore.ieee.org/document/10669376
 
 注意：代码是基于最新版本的mmrotate-1.x，而不是旧版的mmrotate-0.x。
 
-注意：orientedformer的代码全部在路径'./projects/OrientedFormer/'
+注意：orientedformer的代码全部在[路径](https://github.com/wokaikaixinxin/OrientedFormer/tree/main/projects/OrientedFormer)'./projects/OrientedFormer/'
 
 
 
