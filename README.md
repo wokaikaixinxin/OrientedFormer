@@ -43,7 +43,7 @@ root
 
 ## Train
 
-1). DIOR-R
+**1). DIOR-R**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dior.py 2
@@ -57,7 +57,7 @@ bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_swi
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py 2
 ```
 
-2). DOTA-v1.0
+**2). DOTA-v1.0**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0.py 2
@@ -75,19 +75,19 @@ bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r10
 bash tools/dist_train.sh  projects/OrientedFormer/configs/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0.py 2
 ```
 
-3). DOTA-v1.5
+**3). DOTA-v1.5**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.5.py 2
 ```
 
-4). DOTA-v2.0
+**4). DOTA-v2.0**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav2.0.py 2
 ```
 
-5). ICDAR2015
+**5). ICDAR2015**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_2x_icdar2015.py 2
@@ -97,7 +97,7 @@ bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50
 
 ## Test
 
-1). DIOR-R
+**1). DIOR-R**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dior.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dior/epoch_12.pth 2
@@ -111,7 +111,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_swin
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py work_dirs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior/epoch_12.pth 2
 ```
 
-2). DOTA-v1.0
+**2). DOTA-v1.0**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0/epoch_12.pth 2
@@ -131,7 +131,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_swin
 
 Upload results to DOTA official [website](https://captain-whu.github.io/DOTA/evaluation.html).
 
-3). DOTA-v1.5
+**3). DOTA-v1.5**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.5.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.5/epoch_12.pth 2
@@ -139,7 +139,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_
 
 Upload results to DOTA official [website](https://captain-whu.github.io/DOTA/evaluation.html).
 
-4). DOTA-v2.0
+**4). DOTA-v2.0**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav2.0.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav2.0/epoch_12.pth 2
@@ -147,7 +147,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_
 
 Upload results to DOTA official [website](https://captain-whu.github.io/DOTA/evaluation.html).
 
-5). ICDAR2015
+**5). ICDAR2015**
 
 Get result submit.zip
 
@@ -166,16 +166,16 @@ python projects/icdar2015_evaluation/script.py –g=gt.zip –s=submit.zip
 
 ## Main Result
 
-1). DOTA-v1.0
+**1). DOTA-v1.0**
 
 | Dataset   | **Configs**                                                  | Download                                                     | AP_50        | AP75      | mAP         | Backbone | lr schd | bs               |
-| --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ | --------- | ----------- | -------- | ------- | ---------------- |
+| --------- | -------------------- | ------------------------------------------------------------ | ------------ | --------- | ----------- | -------- | ------- | ---------------- |
 | DOTA-v1.0 | [orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0) | 75.3729      | 46.390216 | 45.0071     | R50      | 12epoch | 2img*2 rtx2080ti |
 | DOTA-v1.0 | [orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0-ms.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0-ms.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0-ms) | 79.064371    | 57.463    | 51.891899   | R50      | 12epoch | 2img*2 rtx2080ti |
 | DOTA-v1.0 | [orientedformer_le90_r101_q300_layer2_head64_point32_1x_dotav1.0.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_r101_q300_layer2_head64_point32_1x_dotav1.0.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_r101_q300_layer2_head64_point32_1x_dotav1.0) | 75.915958978 | 49.76108  | 47.11829758 | R101     | 12epoch | 2img*2 rtx2080ti |
 | DOTA-v1.0 | [orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0) | 75.8819      | 48.965    | 45.8218     | Swin-T   | 12epoch | 2img*2 rtx2080ti |
 
-2). DOTA-v1.5
+**2). DOTA-v1.5**
 
 | Dataset   | **Configs**                                                  | Download                                                     | AP_50 | Backbone | lr schd | bs               |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | -------- | ------- | ---------------- |
@@ -187,7 +187,7 @@ Due to the limitation of the length of the paper, all categories of AP for DOTA-
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- | --------- | --------- | ------ | --------- | --------- | ------- | --------- | -------- | ------- | -------- |
 | 72.0444 | 77.4554 | 51.2471 | 64.9538 | 64.0453 | 77.0387 | 85.3310 | 90.83699 | 77.31017 | 78.106886 | 56.103059 | 68.776 | 68.140988 | 72.081567 | 58.6135 | 10.855397 | 67.05879 | 39.2845 | 38.78675 |
 
-3). DOTA-v2.0
+**3). DOTA-v2.0**
 
 | Dataset   | **Configs**                                                  | Download                                                     | AP_50 | Backbone | lr schd | bs               |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | -------- | ------- | ---------------- |
@@ -199,7 +199,7 @@ Due to the limitation of the length of the paper, all categories of AP for DOTA-
 | ------- | -------- | ---------- | --------- | --------- | -------- | --------- | ------- | ------- | ------- | ------- | --------- | ------- | -------- | -------- | ------ | -------- | ------- | --------- | ---------- | ---------- |
 | 76.7619 | 51.55655 | 42.3872759 | 60.464159 | 56.482355 | 55.43076 | 66.681058 | 78.6341 | 60.0626 | 69.6894 | 35.0316 | 56.015956 | 51.9962 | 56.20235 | 54.95597 | 24.335 | 67.31572 | 12.9641 | 54.266644 | 28.8561385 | 30.0281367 |
 
-4). DIOR-R
+**4). DIOR-R**
 
 | Dataset | **Configs**                                                  | Download                                                     | AP_50 | Backbone | lr schd | bs               |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | -------- | ------- | ---------------- |
@@ -207,7 +207,7 @@ Due to the limitation of the length of the paper, all categories of AP for DOTA-
 | DIOR-R  | [orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dior.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dior.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dior) | 68.84 | Swin-T   | 12epoch | 2img*2 rtx2080ti |
 | DIOR-R  | [orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior) | 65.07 | LSK-Net  | 12epoch | 2img*2 rtx2080ti |
 
-5). ICDAR-2015
+**5). ICDAR-2015**
 
 | Dataset   | **Configs**                                                  | Download                                                     | P    | R    | F-measure | Backbone | lr schd | bs               |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---- | --------- | -------- | ------- | ---------------- |
@@ -277,7 +277,7 @@ root
 
 ## 训练
 
-1). DIOR-R
+**1). DIOR-R**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dior.py 2
@@ -291,7 +291,7 @@ bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_swi
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py 2
 ```
 
-2). DOTA-v1.0
+**2). DOTA-v1.0**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0.py 2
@@ -309,19 +309,19 @@ bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r10
 bash tools/dist_train.sh  projects/OrientedFormer/configs/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0.py 2
 ```
 
-3). DOTA-v1.5
+**3). DOTA-v1.5**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.5.py 2
 ```
 
-4). DOTA-v2.0
+**4). DOTA-v2.0**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav2.0.py 2
 ```
 
-5). ICDAR2015
+**5). ICDAR2015**
 
 ```bash
 bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_2x_icdar2015.py 2
@@ -331,7 +331,7 @@ bash tools/dist_train.sh projects/OrientedFormer/configs/orientedformer_le90_r50
 
 ## 测试
 
-1). DIOR-R
+**1). DIOR-R**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dior.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dior/epoch_12.pth 2
@@ -345,7 +345,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_swin
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py work_dirs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior/epoch_12.pth 2
 ```
 
-2). DOTA-v1.0
+**2). DOTA-v1.0**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.0/epoch_12.pth 2
@@ -365,7 +365,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_swin
 
 将结果上传 [DOTA](https://captain-whu.github.io/DOTA/evaluation.html)官方网站。
 
-3). DOTA-v1.5
+**3). DOTA-v1.5**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.5.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav1.5/epoch_12.pth 2
@@ -373,7 +373,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_
 
 将结果上传 [DOTA](https://captain-whu.github.io/DOTA/evaluation.html)官方网站。
 
-4). DOTA-v2.0
+**4). DOTA-v2.0**
 
 ```bash
 bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav2.0.py work_dirs/orientedformer_le90_r50_q300_layer2_head64_point32_1x_dotav2.0/epoch_12.pth 2
@@ -381,7 +381,7 @@ bash tools/dist_test.sh projects/OrientedFormer/configs/orientedformer_le90_r50_
 
 将结果上传 [DOTA](https://captain-whu.github.io/DOTA/evaluation.html)官方网站。
 
-5). ICDAR2015
+**5). ICDAR2015**
 
 得到结果submit.zip
 
@@ -400,7 +400,7 @@ python projects/icdar2015_evaluation/script.py –g=gt.zip –s=submit.zip
 
 ## 主要结果
 
-1). DOTA-v1.0
+**1). DOTA-v1.0**
 
 | Dataset   | **Configs**                                                  | Download                                                     | AP_50        | AP75      | mAP         | Backbone | lr schd | bs               |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ | --------- | ----------- | -------- | ------- | ---------------- |
@@ -409,7 +409,7 @@ python projects/icdar2015_evaluation/script.py –g=gt.zip –s=submit.zip
 | DOTA-v1.0 | [orientedformer_le90_r101_q300_layer2_head64_point32_1x_dotav1.0.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_r101_q300_layer2_head64_point32_1x_dotav1.0.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_r101_q300_layer2_head64_point32_1x_dotav1.0) | 75.915958978 | 49.76108  | 47.11829758 | R101     | 12epoch | 2img*2 rtx2080ti |
 | DOTA-v1.0 | [orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dotav1.0) | 75.8819      | 48.965    | 45.8218     | Swin-T   | 12epoch | 2img*2 rtx2080ti |
 
-2). DOTA-v1.5
+**2). DOTA-v1.5**
 
 | Dataset   | **Configs**                                                  | Download                                                     | AP_50 | Backbone | lr schd | bs               |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | -------- | ------- | ---------------- |
@@ -421,7 +421,7 @@ python projects/icdar2015_evaluation/script.py –g=gt.zip –s=submit.zip
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- | -------- | --------- | --------- | ------ | --------- | --------- | ------- | --------- | -------- | ------- | -------- |
 | 72.0444 | 77.4554 | 51.2471 | 64.9538 | 64.0453 | 77.0387 | 85.3310 | 90.83699 | 77.31017 | 78.106886 | 56.103059 | 68.776 | 68.140988 | 72.081567 | 58.6135 | 10.855397 | 67.05879 | 39.2845 | 38.78675 |
 
-3). DOTA-v2.0
+**3). DOTA-v2.0**
 
 | Dataset   | **Configs**                                                  | Download                                                     | AP_50 | Backbone | lr schd | bs               |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | -------- | ------- | ---------------- |
@@ -433,7 +433,7 @@ python projects/icdar2015_evaluation/script.py –g=gt.zip –s=submit.zip
 | ------- | -------- | ---------- | --------- | --------- | -------- | --------- | ------- | ------- | ------- | ------- | --------- | ------- | -------- | -------- | ------ | -------- | ------- | --------- | ---------- | ---------- |
 | 76.7619 | 51.55655 | 42.3872759 | 60.464159 | 56.482355 | 55.43076 | 66.681058 | 78.6341 | 60.0626 | 69.6894 | 35.0316 | 56.015956 | 51.9962 | 56.20235 | 54.95597 | 24.335 | 67.31572 | 12.9641 | 54.266644 | 28.8561385 | 30.0281367 |
 
-4). DIOR-R
+**4). DIOR-R**
 
 | Dataset | **Configs**                                                  | Download                                                     | AP_50 | Backbone | lr schd | bs               |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | -------- | ------- | ---------------- |
@@ -441,7 +441,7 @@ python projects/icdar2015_evaluation/script.py –g=gt.zip –s=submit.zip
 | DIOR-R  | [orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dior.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dior.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_swin-tiny_q300_layer2_head64_point32_1x_dior) | 68.84 | Swin-T   | 12epoch | 2img*2 rtx2080ti |
 | DIOR-R  | [orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py](https://github.com/wokaikaixinxin/OrientedFormer/blob/main/projects/OrientedFormer/configs/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior.py) | [Hugging Face](https://huggingface.co/wokaikaixinxin/OrientedFormer/tree/main/orientedformer_le90_lsk_t_q300_layer2_head64_point32_1x_dior) | 65.07 | LSK-Net  | 12epoch | 2img*2 rtx2080ti |
 
-5). ICDAR-2015
+**5). ICDAR-2015**
 
 | Dataset   | **Configs**                                                  | Download                                                     | P  | R | F-measure  | Backbone | lr schd | bs               |
 | --------- | --------------------------------|-----------|----------------- | ------------------------------------------------------------ | ---- | -------- | ------- | ---------------- |
