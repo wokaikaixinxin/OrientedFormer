@@ -10,6 +10,8 @@ The paper is officially accepted by IEEE Transactions on Geoscience and Remote S
 
 TGRS paper link https://ieeexplore.ieee.org/document/10669376
 
+arxiv link https://arxiv.org/abs/2409.19648
+
 If you like it, please click on star.
 
 
@@ -217,6 +219,8 @@ Due to the limitation of the length of the paper, all categories of AP for DOTA-
 
 ## Cite OrientedFormer
 
+“Instead of citing an article with closed or falsely advertised open-source code, it is preferable to cite an article with genuine open-source code.”
+
 ```
 @ARTICLE{10669376,
   author={Zhao, Jiaqi and Ding, Zeyu and Zhou, Yong and Zhu, Hancheng and Du, Wen-Liang and Yao, Rui and El Saddik, Abdulmotaleb},
@@ -244,7 +248,11 @@ Due to the limitation of the length of the paper, all categories of AP for DOTA-
 
 TGRS官方论文链接 https://ieeexplore.ieee.org/document/10669376
 
+arxiv link https://arxiv.org/abs/2409.19648
+
 如果喜欢，请点一点小星星收藏。
+
+**“与其引用不开源代码、假开源代码的文章，不如引用真开源代码的文章。”**
 
 
 
@@ -450,6 +458,8 @@ python projects/icdar2015_evaluation/script.py –g=gt.zip –s=submit.zip
 
 
 ## 引用 OrientedFormer
+
+**“与其引用不开源代码、假开源代码的文章，不如引用真开源代码的文章。”**
 
 ```
 @ARTICLE{10669376,
