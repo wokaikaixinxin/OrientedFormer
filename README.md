@@ -12,6 +12,20 @@ TGRS paper link https://ieeexplore.ieee.org/document/10669376
 
 arxiv link https://arxiv.org/abs/2409.19648
 
+NEW
+
+- [x] ICDAR2015 Dataset in MMRotate-1.x
+
+- [x] ICDAR2015 Metric  in MMRotate-1.x
+
+- [x] ChannelMapperWithGN in MMRotate-1.x
+
+- [x] RBBoxL1Cost in MMRotate-1.x
+
+- [x] RotatedIoUCost in  MMRotate-1.x
+
+- [x] TopkHungarianAssigner in MMRotate-1.x
+
 If you like it, please click on star.
 
 
@@ -249,6 +263,20 @@ Due to the limitation of the length of the paper, all categories of AP for DOTA-
 TGRS官方论文链接 https://ieeexplore.ieee.org/document/10669376
 
 arxiv link https://arxiv.org/abs/2409.19648
+
+新特性：
+
+- [x] 数据集工具：                                 ICDAR2015 Dataset in MMRotate-1.x
+
+- [x] 数据集工具：                                 ICDAR2015 Metric  in MMRotate-1.x
+
+- [x] 不用FPN，用channelmapper： ChannelMapperWithGN in MMRotate-1.x
+
+- [x] 端到端分配的L1代价矩阵：          RBBoxL1Cost in MMRotate-1.x
+
+- [x] 端到端分配的IoU代价矩阵：        RotatedIoUCost in  MMRotate-1.x
+
+- [x] Topk匈牙利匹配：                        TopkHungarianAssigner in MMRotate-1.x
 
 如果喜欢，请点一点小星星收藏。
 
