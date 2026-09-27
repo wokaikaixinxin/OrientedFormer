@@ -1,4 +1,4 @@
-# (TGRS 2024) OrientedFormer: An End-to-End Transformer-Based Oriented Object Detector in Remote Sensing Images
+# (TGRS 2024 :fire: ESI Highly Cited Paper) OrientedFormer: An End-to-End Transformer-Based Oriented Object Detector in Remote Sensing Images
 
 **Please refer [ai4rs](https://github.com/wokaikaixinxin/ai4rs) !**  Our [ai4rs](https://github.com/wokaikaixinxin/ai4rs) integrate remote sensing related work, including newest work on cvpr 2025.
 
@@ -18,7 +18,7 @@ The Chinese Version is below (中文版在下面).
 
 ## Introduction
 
-The paper is officially accepted by IEEE Transactions on Geoscience and Remote Sensing (**TGRS 2024**).
+The paper is officially accepted by IEEE Transactions on Geoscience and Remote Sensing (**TGRS 2024 :fire: ESI Highly Cited Paper**).
 
 TGRS paper link https://ieeexplore.ieee.org/document/10669376
 
@@ -262,7 +262,7 @@ Due to the limitation of the length of the paper, all categories of AP for DOTA-
 
 
 
-# (TGRS 2024) OrientedFormer: An End-to-End Transformer-Based Oriented Object Detector in Remote Sensing Images
+# (TGRS 2024 :fire: ESI Highly Cited Paper) OrientedFormer: An End-to-End Transformer-Based Oriented Object Detector in Remote Sensing Images
 
 **请参考 [ai4rs](https://github.com/wokaikaixinxin/ai4rs) !**  我们的[ai4rs](https://github.com/wokaikaixinxin/ai4rs)整合了最新遥感相关工作，包括最新的CVPR2025的工作。
 
